@@ -1,5 +1,7 @@
 import { View, Text, Button } from 'react-native';
 import React from 'react';
+import First from './src/components/First';
+import FlatListScreen from './src/components/FlatListScreen';
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
         bar hide
       </Text>
       <Button title="presss me" />
+      <First />
+      <FlatListScreen />
     </View>
   );
 };
