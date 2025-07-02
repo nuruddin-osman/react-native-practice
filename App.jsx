@@ -6,6 +6,8 @@ import SectionListScreen from './src/components/SectionListScreen';
 import Login from './src/components/Login';
 import ContactsScreen from './src/screens/contacts/ContactsScreen';
 import Grid from './src/components/Grid';
+import UseEffectHooks from './src/components/UseEffectHooks';
+import PracticeClass from './src/components/ClassComponents';
 
 const App = () => {
   return (
@@ -21,7 +23,9 @@ const App = () => {
         <SectionListScreen /> */}
         {/* <Login /> */}
         {/* <ContactsScreen /> */}
-        <Grid />
+        {/* <Grid /> */}
+        {/* <UseEffectHooks /> */}
+        <PracticeClass />
       </View>
     </ScrollView>
   );
