@@ -5,6 +5,7 @@ import FlatListScreen from './src/components/FlatListScreen';
 import SectionListScreen from './src/components/SectionListScreen';
 import Login from './src/components/Login';
 import ContactsScreen from './src/screens/contacts/ContactsScreen';
+import Grid from './src/components/Grid';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <FlatListScreen />
         <SectionListScreen /> */}
         {/* <Login /> */}
-        <ContactsScreen />
+        {/* <ContactsScreen /> */}
+        <Grid />
       </View>
     </ScrollView>
   );
