@@ -44,4 +44,12 @@ export const styles = StyleSheet.create({
     color: '#FFF',
     textAlign: 'center',
   },
+  lodingBox: {
+    backgroundColor: '#FFF',
+    alignSelf: 'center',
+    elevation: 5,
+    shadowColor: '#000',
+    padding: '30',
+    borderRadius: 10,
+  },
 });

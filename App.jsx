@@ -9,6 +9,7 @@ import Grid from './src/components/Grid';
 import UseEffectHooks from './src/components/UseEffectHooks';
 import PracticeClass from './src/components/ClassComponents';
 import ButtonStyle from './src/components/ButtonStyle';
+import Loading from './src/components/Loading';
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
         {/* <Grid /> */}
         {/* <UseEffectHooks /> */}
         {/* <PracticeClass /> */}
-        <ButtonStyle />
+        {/* <ButtonStyle /> */}
+        <Loading />
       </View>
     </ScrollView>
   );
