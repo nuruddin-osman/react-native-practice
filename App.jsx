@@ -12,6 +12,9 @@ import ButtonStyle from './src/components/ButtonStyle';
 import Loading from './src/components/Loading';
 import ButtonPress from './src/components/ButtonPress';
 import StatusBarComponets from './src/components/StatusBarComponets';
+import UseRefHooks from './src/components/UseRefHooks';
+import ModalView from './src/components/ModalView';
+import UserAlert from './src/components/UserAlert';
 
 const App = () => {
   return (
@@ -49,6 +52,9 @@ const App = () => {
         {/* <Loading /> */}
         {/* <ButtonPress /> */}
         {/* <StatusBarComponets /> */}
+        {/* {<UseRefHooks />} */}
+        {/* {<ModalView />} */}
+        {<UserAlert />}
       </View>
     </ScrollView>
   );

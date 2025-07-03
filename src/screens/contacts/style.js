@@ -53,4 +53,15 @@ export const styles = StyleSheet.create({
     padding: '30',
     borderRadius: 10,
   },
+  inputs: {
+    color: '#2d2d2d',
+    backgroundColor: '#fff',
+    borderColor: '#000',
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    fontSize: 20,
+    marginBottom: 10,
+  },
 });
