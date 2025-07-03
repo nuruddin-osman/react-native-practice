@@ -43,6 +43,7 @@ export const styles = StyleSheet.create({
   touchableOpacityBtnText: {
     color: '#FFF',
     textAlign: 'center',
+    fontSize: 20,
   },
   lodingBox: {
     backgroundColor: '#FFF',

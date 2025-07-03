@@ -10,6 +10,7 @@ import UseEffectHooks from './src/components/UseEffectHooks';
 import PracticeClass from './src/components/ClassComponents';
 import ButtonStyle from './src/components/ButtonStyle';
 import Loading from './src/components/Loading';
+import ButtonPress from './src/components/ButtonPress';
 
 const App = () => {
   return (
@@ -29,7 +30,8 @@ const App = () => {
         {/* <UseEffectHooks /> */}
         {/* <PracticeClass /> */}
         {/* <ButtonStyle /> */}
-        <Loading />
+        {/* <Loading /> */}
+        <ButtonPress />
       </View>
     </ScrollView>
   );
