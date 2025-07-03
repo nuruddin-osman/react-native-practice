@@ -8,6 +8,7 @@ import ContactsScreen from './src/screens/contacts/ContactsScreen';
 import Grid from './src/components/Grid';
 import UseEffectHooks from './src/components/UseEffectHooks';
 import PracticeClass from './src/components/ClassComponents';
+import ButtonStyle from './src/components/ButtonStyle';
 
 const App = () => {
   return (
@@ -25,7 +26,8 @@ const App = () => {
         {/* <ContactsScreen /> */}
         {/* <Grid /> */}
         {/* <UseEffectHooks /> */}
-        <PracticeClass />
+        {/* <PracticeClass /> */}
+        <ButtonStyle />
       </View>
     </ScrollView>
   );
