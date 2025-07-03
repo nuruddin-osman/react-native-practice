@@ -1,4 +1,4 @@
-import { View, Text, Button, ScrollView } from 'react-native';
+import { View, Text, Button, ScrollView, StatusBar } from 'react-native';
 import React from 'react';
 import First from './src/components/First';
 import FlatListScreen from './src/components/FlatListScreen';
@@ -11,10 +11,26 @@ import PracticeClass from './src/components/ClassComponents';
 import ButtonStyle from './src/components/ButtonStyle';
 import Loading from './src/components/Loading';
 import ButtonPress from './src/components/ButtonPress';
+import StatusBarComponets from './src/components/StatusBarComponets';
 
 const App = () => {
   return (
     <ScrollView>
+      <View
+        style={{
+          paddingTop: StatusBar.currentHeight,
+          flex: 1,
+          backgroundColor: '#8000ff',
+        }}
+      >
+        <StatusBar
+          animated={true}
+          barStyle="light-content"
+          hidden={false}
+          translucent={true}
+          showHideTransition="fade"
+        />
+      </View>
       <View>
         {/* <Text style={{ fontSize: 30 }}>
           react native android emulator when run this project then emulator
@@ -31,7 +47,8 @@ const App = () => {
         {/* <PracticeClass /> */}
         {/* <ButtonStyle /> */}
         {/* <Loading /> */}
-        <ButtonPress />
+        {/* <ButtonPress /> */}
+        {/* <StatusBarComponets /> */}
       </View>
     </ScrollView>
   );
