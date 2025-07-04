@@ -15,6 +15,7 @@ import StatusBarComponets from './src/components/StatusBarComponets';
 import UseRefHooks from './src/components/UseRefHooks';
 import ModalView from './src/components/ModalView';
 import UserAlert from './src/components/UserAlert';
+import PostAPi from './src/components/PostAPi';
 
 const App = () => {
   return (
@@ -54,7 +55,8 @@ const App = () => {
         {/* <StatusBarComponets /> */}
         {/* {<UseRefHooks />} */}
         {/* {<ModalView />} */}
-        {<UserAlert />}
+        {/* {<UserAlert />} */}
+        {<PostAPi />}
       </View>
     </ScrollView>
   );
