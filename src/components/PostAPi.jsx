@@ -1,37 +1,30 @@
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, Button, Alert } from 'react-native';
 import React, { useState } from 'react';
 import { styles } from '../screens/contacts/style';
 import axios from 'axios';
 
 const PostAPi = () => {
   const [formData, setFormData] = useState({ id: '', name: '', email: '' });
-  //   const newData = { ...data, content: content, imageId: imageId };
-  // const res = await fetch(apiUrl + "article", {
-  //   method: "POST",
-  //   headers: {
-  //     "content-type": "application/json",
-  //     Accept: "application/json",
-  //     Authorization: `Bearer ${token()}`,
-  //   },
-  //   body: JSON.stringify(newData),
-  // });
-  // const result = await res.json();
-  // if (result.status == true) {
-  //   toast.success(result.message);
-  // } else {
-  //   toast.error("Credential error");
-  // }
 
-  const handlePress = async (field, value) => {
+  const handleInput = (field, value) => {
     setFormData({ ...formData, [field]: value });
+  };
+  const handlePress = async () => {
+    if (
+      !formData.id.trim() ||
+      !formData.name.trim() ||
+      !formData.email.trim()
+    ) {
+      alert('সবগুলো ফিল্ড পূরণ করুন');
+      return;
+    }
     try {
-      const res = await axios
-        .post('http://10.0.2.2:3000/users', formData)
-        .then(response => {
-          console.log('success');
-        });
+      const res = await axios.post('http://10.0.2.2:3000/users', formData);
+      console.log(res.data);
+      Alert.alert('done');
+      setFormData({ id: '', name: '', email: '' });
     } catch (error) {
-      console.log(error.message);
+      console.log('error:');
     }
   };
   return (
@@ -42,19 +35,19 @@ const PostAPi = () => {
           style={styles.inputs}
           value={formData.id}
           placeholder="ID"
-          onChangeText={value => handlePress('id', value)}
+          onChangeText={value => handleInput('id', value)}
         />
         <TextInput
           style={styles.inputs}
           value={formData.name}
           placeholder="name"
-          onChangeText={value => handlePress('name', value)}
+          onChangeText={value => handleInput('name', value)}
         />
         <TextInput
           style={styles.inputs}
           value={formData.email}
           placeholder="email"
-          onChangeText={value => handlePress('email', value)}
+          onChangeText={value => handleInput('email', value)}
         />
         <Button title="Post" onPress={handlePress} />
       </View>
