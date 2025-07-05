@@ -64,4 +64,33 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     marginBottom: 10,
   },
+  name: {
+    color: 'orange',
+    fontSize: 22,
+    fontWeight: '700',
+  },
+  email: {
+    color: '#FFF',
+    fontSize: 20,
+    fontWeight: '500',
+  },
+  card: {
+    backgroundColor: 'gray',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    marginBottom: 10,
+    borderLeftWidth: 5,
+    borderLeftColor: 'bluebiolet',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 8,
+  },
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#f0f0f0',
+  },
 });
