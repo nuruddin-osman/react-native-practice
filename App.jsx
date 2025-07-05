@@ -17,6 +17,7 @@ import ModalView from './src/components/ModalView';
 import UserAlert from './src/components/UserAlert';
 import PostAPi from './src/components/PostAPi';
 import Put_APi from './src/components/Put_APi';
+import PetchAPis from './src/components/PetchAPis';
 
 const App = () => {
   return (
@@ -58,7 +59,8 @@ const App = () => {
         {/* {<ModalView />} */}
         {/* {<UserAlert />} */}
         {/* {<PostAPi />} */}
-        {<Put_APi />}
+        {/* {<Put_APi />} */}
+        {<PetchAPis />}
       </View>
     </ScrollView>
   );
