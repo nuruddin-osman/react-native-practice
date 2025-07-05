@@ -18,6 +18,7 @@ import UserAlert from './src/components/UserAlert';
 import PostAPi from './src/components/PostAPi';
 import Put_APi from './src/components/Put_APi';
 import PetchAPis from './src/components/PetchAPis';
+import DeleteApi from './src/components/DeleteApi';
 
 const App = () => {
   return (
@@ -60,7 +61,8 @@ const App = () => {
         {/* {<UserAlert />} */}
         {/* {<PostAPi />} */}
         {/* {<Put_APi />} */}
-        {<PetchAPis />}
+        {/* {<PetchAPis />} */}
+        {<DeleteApi />}
       </View>
     </ScrollView>
   );
