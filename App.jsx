@@ -16,6 +16,7 @@ import UseRefHooks from './src/components/UseRefHooks';
 import ModalView from './src/components/ModalView';
 import UserAlert from './src/components/UserAlert';
 import PostAPi from './src/components/PostAPi';
+import Put_APi from './src/components/Put_APi';
 
 const App = () => {
   return (
@@ -56,7 +57,8 @@ const App = () => {
         {/* {<UseRefHooks />} */}
         {/* {<ModalView />} */}
         {/* {<UserAlert />} */}
-        {<PostAPi />}
+        {/* {<PostAPi />} */}
+        {<Put_APi />}
       </View>
     </ScrollView>
   );
