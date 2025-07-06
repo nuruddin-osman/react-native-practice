@@ -21,6 +21,7 @@ import PetchAPis from './src/components/PetchAPis';
 import DeleteApi from './src/components/DeleteApi';
 import GetAPi from './src/components/GetAPi';
 import PlatformPractice from './src/components/PlatformPractice';
+import SearchBar from './src/components/SearchBar';
 
 const App = () => {
   return (
@@ -66,7 +67,8 @@ const App = () => {
         {/* {<PetchAPis />} */}
         {/* {<DeleteApi />} */}
         {/* {<GetAPi />} */}
-        {<PlatformPractice />}
+        {/* {<PlatformPractice />} */}
+        {<SearchBar />}
       </View>
     </ScrollView>
   );
