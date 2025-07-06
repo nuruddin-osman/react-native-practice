@@ -20,6 +20,7 @@ import Put_APi from './src/components/Put_APi';
 import PetchAPis from './src/components/PetchAPis';
 import DeleteApi from './src/components/DeleteApi';
 import GetAPi from './src/components/GetAPi';
+import PlatformPractice from './src/components/PlatformPractice';
 
 const App = () => {
   return (
@@ -64,7 +65,8 @@ const App = () => {
         {/* {<Put_APi />} */}
         {/* {<PetchAPis />} */}
         {/* {<DeleteApi />} */}
-        {<GetAPi />}
+        {/* {<GetAPi />} */}
+        {<PlatformPractice />}
       </View>
     </ScrollView>
   );
